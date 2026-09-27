@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XLITA - Drive Beyond | Official Showcase</title>
+    
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Three.js Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/RGBELoader.js"></script>
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="spinner"></div>
+        <div class="loader-text">LOADING XLITA 3D ENGINE...</div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="logo-box">
+            <span class="brand-name">XLITA</span>
+            <span class="tagline">DRIVE BEYOND</span>
+        </div>
+        <nav>
+            <a href="#hero">OVERVIEW</a>
+            <a href="#aero">DESIGN</a>
+            <a href="#wheels">PERFORMANCE</a>
+            <a href="#interior">INTERIOR</a>
+        </nav>
+    </header>
+
+    <!-- 3D WebGL Canvas Container -->
+    <div id="webgl-container"></div>
+
+    <div class="hud-hint">SWIPE TO ROTATE 360° | SCROLL TO EXPLORE</div>
+
+    <!-- Scroll Content Sections -->
+    <div class="scroll-content">
+        <section id="hero" class="hero-section">
+            <div class="title-container">
+                <h1>XLITA</h1>
+                <p>POWER • LUXURY • PERFORMANCE</p>
+            </div>
+        </section>
+
+        <section id="aero" class="section-left">
+            <div class="card">
+                <h2>CANDY ROSSO AERODYNAMICS</h2>
+                <p>Engineered with aggressive carbon-fiber splitters, active air channels, and high-downforce rear diffusers for track precision.</p>
+                <div class="grid-stats">
+                    <div class="stat-box">
+                        <h3>1,030 HP</h3>
+                        <span>QUAD-TURBO HYBRID</span>
+                    </div>
+                    <div class="stat-box">
+                        <h3>2.4s</h3>
+                        <span>0-100 KM/H</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="wheels" class="section-right">
+            <div class="card">
+                <h2>CARBON CERAMIC BRAKES</h2>
+                <p>Gloss-black multi-spoke alloy wheels backed by track-spec carbon ceramic brakes and signature yellow XLITA calipers.</p>
+                <div class="grid-stats">
+                    <div class="stat-box">
+                        <h3>350+ KM/H</h3>
+                        <span>TOP SPEED</span>
+                    </div>
+                    <div class="stat-box">
+                        <h3>eAWD</h3>
+                        <span>TRIPLE MOTOR</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="interior" class="section-left">
+            <div class="card">
+                <h2>RACING COCKPIT</h2>
+                <p>Hand-stitched Italian red and black leather bucket seats embroidered with custom gold XLITA emblems and integrated digital telemetry.</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Main JavaScript Logic -->
+    <script src="script.js"></script>
+</body>
+</html>
